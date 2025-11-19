@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魏登钊 - 个人简历</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        neutral: '#F5F7FA',
+                        dark: '#1D2129',
+                        light: '#86909C'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-dark">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-primary flex items-center">
+                <i class="fa fa-user-circle-o mr-2"></i>个人简历
+            </h1>
+            <div class="flex space-x-4">
+                <a href="#contact" class="text-light hover:text-primary transition-colors">
+                    <i class="fa fa-envelope-o mr-1"></i>联系方式
+                </a>
+                <a href="#education" class="text-light hover:text-primary transition-colors">
+                    <i class="fa fa-graduation-cap mr-1"></i>教育背景
+                </a>
+                <a href="#experience" class="text-light hover:text-primary transition-colors">
+                    <i class="fa fa-briefcase mr-1"></i>工作经历
+                </a>
+                <a href="#projects" class="text-light hover:text-primary transition-colors">
+                    <i class="fa fa-folder-open-o mr-1"></i>项目经验
+                </a>
+                <a href="#achievements" class="text-light hover:text-primary transition-colors">
+                    <i class="fa fa-trophy mr-1"></i>学术成果
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区 -->
+    <main class="container mx-auto px-4 py-8 md:py-12">
+        <!-- 个人信息头部 -->
+        <section class="bg-gradient-to-r from-primary to-secondary text-white rounded-2xl shadow-lg p-8 mb-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 text-center md:text-left mb-6 md:mb-0">
+                    <div class="w-32 h-32 bg-white rounded-full mx-auto md:mx-0 flex items-center justify-center mb-4">
+                        <i class="fa fa-user text-5xl text-primary"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-shadow">魏登钊</h2>
+                    <p class="text-xl mt-2 opacity-90">机械设计制造及自动化 | 软件工程</p>
+                </div>
+                <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center bg-white/10 p-3 rounded-lg">
+                        <i class="fa fa-university w-8 text-center text-lg"></i>
+                        <span class="ml-2">兰州理工大学</span>
+                    </div>
+                    <div class="flex items-center bg-white/10 p-3 rounded-lg">
+                        <i class="fa fa-map-marker w-8 text-center text-lg"></i>
+                        <span class="ml-2">兰州市兰州新区</span>
+                    </div>
+                    <div class="flex items-center bg-white/10 p-3 rounded-lg">
+                        <i class="fa fa-phone w-8 text-center text-lg"></i>
+                        <span class="ml-2">15390567362</span>
+                    </div>
+                    <div class="flex items-center bg-white/10 p-3 rounded-lg">
+                        <i class="fa fa-envelope-o w-8 text-center text-lg"></i>
+                        <span class="ml-2">2739005353@qq.com</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 教育背景 -->
+        <section id="education" class="mb-10">
+            <div class="flex items-center mb-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                    <i class="fa fa-graduation-cap text-primary"></i>
+                </div>
+                <h2 class="text-2xl font-bold">教育背景</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">机械设计制造及其自动化</h3>
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">本科</span>
+                    </div>
+                    <p class="text-light mb-3">兰州理工大学 | 2019.09 - 2023.06</p>
+                    <div class="mt-4">
+                        <h4 class="font-medium text-dark mb-2">核心课程：</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">机械制造技术基础</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">CAD/CAM 技术</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">金属工艺学</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">数控技术</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">材料成型</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">机械原理</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">机械设计</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">控制原理</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">电子技术</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">软件工程</h3>
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">本科</span>
+                    </div>
+                    <p class="text-light mb-3">兰州理工大学 | 2023.09 - 至今</p>
+                    <div class="mt-4">
+                        <h4 class="font-medium text-dark mb-2">核心课程：</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">算法与数据结构</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">面向服务的体系构架</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">信息安全</span>
+                            <span class="bg-neutral px-2 py-1 rounded text-sm">数据库开发</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 工作经历 -->
+        <section id="experience" class="mb-10">
+            <div class="flex items-center mb-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                    <i class="fa fa-briefcase text-primary"></i>
+                </div>
+                <h2 class="text-2xl font-bold">工作经历</h2>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold">兰州电机股份有限公司</h3>
+                        <p class="text-primary font-medium mt-1">小发工艺 主任</p>
+                    </div>
+                    <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm mt-2 md:mt-0">2023.07 - 至今</span>
+                </div>
+                <ul class="space-y-3 text-dark">
+                    <li class="flex">
+                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                        <span>负责中小型电机机械加工、装配、外协工艺设计，保障电机生产工艺合理性</span>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                        <span>主导工装模具设计，提升生产效率与产品精度</span>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                        <span>参与 TF4W 型风力发电机结构设计，助力新能源装备研发</span>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                        <span>推进工艺信息化开发，优化工艺管理流程；负责室内管理，保障部门运转</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 项目经验 -->
+        <section id="projects" class="mb-10">
+            <div class="flex items-center mb-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                    <i class="fa fa-folder-open-o text-primary"></i>
+                </div>
+                <h2 class="text-2xl font-bold">项目经验</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6">
+                <!-- 项目1 -->
+                <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">AI 工艺指令自动生成系统开发项目</h3>
+                            <p class="text-primary font-medium mt-1">项目负责人</p>
+                        </div>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm mt-2 md:mt-0">2024.12 - 2025.10</span>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="font-medium text-dark mb-2">项目职责：</h4>
+                        <p class="text-dark pl-6 border-l-2 border-primary/30">
+                            负责AI智能生成系统架构设计及其与PLM、MES的API开发，独立完成所有模块的编码、测试、打包与上线运行，优化工作流及人员配置
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-dark mb-2">项目成果：</h4>
+                        <ul class="space-y-2 text-dark pl-6">
+                            <li class="flex">
+                                <i class="fa fa-star text-yellow-400 mt-1 mr-2"></i>
+                                <span>替代原三十余工艺人员当量的工艺指令编制工作，大幅降低人力成本</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-star text-yellow-400 mt-1 mr-2"></i>
+                                <span>指令合格率、规范率均达 90+%</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-star text-yellow-400 mt-1 mr-2"></i>
+                                <span>实现与PLM、MES系统数据对接</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 项目2 -->
+                <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">特种超高压全封闭油冷式机座工艺开发项目</h3>
+                            <p class="text-primary font-medium mt-1">项目参与人</p>
+                        </div>
+                        <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm mt-2 md:mt-0">2024.05 - 2024.10</span>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="font-medium text-dark mb-2">项目职责：</h4>
+                        <p class="text-dark pl-6 border-l-2 border-primary/30">
+                            运用 SPC 方法，记录关键工艺参数与试验结果；深入分析各工艺参数对产品试验结果的影响曲线，拟合试验数据分布，求解最佳工艺参数
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-dark mb-2">项目成果：</h4>
+                        <ul class="space-y-2 text-dark pl-6">
+                            <li class="flex">
+                                <i class="fa fa-star text-yellow-400 mt-1 mr-2"></i>
+                                <span>优化后工艺参数应用于定型工艺文件，产品合格率从试生产的 0% 提升至 83%</span>
+                            </li>
+                            <li class="flex">
+                                <i class="fa fa-star text-yellow-400 mt-1 mr-2"></i>
+                                <span>建立 SPC 在求解工艺参数的应用流程</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学术成果 -->
+        <section id="achievements" class="mb-10">
+            <div class="flex items-center mb-4">
+                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
+                    <i class="fa fa-trophy text-primary"></i>
+                </div>
+                <h2 class="text-2xl font-bold">学术成果</h2>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <h3 class="text-lg font-semibold mb-4 flex items-center">
+                    <i class="fa fa-file-text-o text-primary mr-2"></i>专利 / 软著
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start p-3 bg-neutral rounded-lg">
+                        <i class="fa fa-certificate text-secondary mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-medium">材料工艺消耗定额计算引擎</p>
+                            <p class="text-sm text-light mt-1">所有权利</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-3 bg-neutral rounded-lg">
+                        <i class="fa fa-certificate text-secondary mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-medium">制造业工装管理系统</p>
+                            <p class="text-sm text-light mt-1">所有权利</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-3 bg-neutral rounded-lg">
+                        <i class="fa fa-certificate text-secondary mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-medium">AI 工艺指令一体化编制系统</p>
+                            <p class="text-sm text-light mt-1">所有权利</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-3 bg-neutral rounded-lg">
+                        <i class="fa fa-certificate text-secondary mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-medium">特种超高压全封闭油冷式机座工艺原理</p>
+                            <p class="text-sm text-light mt-1">定额内排名第六位</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-3 bg-neutral rounded-lg md:col-span-2">
+                        <i class="fa fa-certificate text-secondary mt-1 mr-3"></i>
+                        <div>
+                            <p class="font-medium">TF4W 型 2 兆瓦风力发电机</p>
+                            <p class="text-sm text-light mt-1">定额内排名第十三位</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold flex items-center">
+                        <i class="fa fa-user-circle-o mr-2"></i>魏登钊 - 个人简历
+                    </h3>
+                    <p class="text-light mt-2">机械设计制造及自动化 | 软件工程专业</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#contact" class="text-light hover:text-white transition-colors flex items-center">
+                        <i class="fa fa-phone mr-1"></i> 电话联系
+                    </a>
+                    <a href="mailto:2739005353@qq.com" class="text-light hover:text-white transition-colors flex items-center">
+                        <i class="fa fa-envelope-o mr-1"></i> 发送邮件
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-light text-sm">
+                <p>© 2025 个人简历展示 | 设计与开发：基于HTML、Tailwind CSS构建</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 回到顶部功能
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
